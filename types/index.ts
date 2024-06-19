@@ -9,8 +9,13 @@ export interface ProfileProps {
 export interface PropmtCardProps {
 	post: PromptProps;
 	handleTagClick?: (tag: string) => void;
-	handleEdit: () => void;
-	handleDelete: () => void;
+	handleEdit?: () => void;
+	handleDelete?: () => void;
+}
+
+export interface PropmtCardListProps {
+	data: PromptProps[];
+	handleTagClick?: (tag: string) => void;
 }
 
 export interface PromptProps {
